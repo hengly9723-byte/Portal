@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://portal.ute.ac/assets/ums_icon.png" type="image/x-icon">
     <title>Student Profile</title>
     <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -13,7 +14,7 @@
     <link rel="icon" type="image/png" href="https://portal.ute.ac.at/assets/ums_icon.png">
 </head>
 
-<body class="bg-[#f8fafc]">
+<body class="bg-[#f8fafc] relative">
     <header
         class="z-50 flex items-center justify-between h-[60px] md:h-[50px] w-full bg-white shadow-[0_1px_2px_rgba(0,0,0,0.10)] sticky top-0">
         <div class="flex items-center w-auto">
@@ -60,16 +61,16 @@
             </a>
         </div>
     </header>
-    <main class="flex w-full min-h-[92vh]">
+    <main class="flex w-full min-h-screen absolute top-0">
 
         <!-- Sidebar -->
 
         <div id="sidebar"
             class="@container shrink-0 w-[270px] transition-all duration-300 ease-in-out fixed md:relative top-0 left-0 h-screen md:h-auto -translate-x-full md:translate-x-0 md:z-auto z-50">
-            <div class="bg-[#0b1b37] h-full">
-                <div class="flex flex-col items-center h-[160px] bg-[#09162c] gap-2">
+            <div class="bg-[#0b1b37] h-full overflow-auto">
+                <div class="flex flex-col items-center h-[210px] bg-[#09162c] gap-2">
                     <div
-                        class="@max-[200px]:scale-0 @max-[200px]:opacity-0 flex flex-col justify-center items-center gap-2 transition-all duration-200 transform origin-center">
+                        class="@max-[200px]:scale-0 @max-[200px]:opacity-0 flex flex-col justify-center items-center gap-2 transition-all duration-200 transform origin-center mt-[50px]">
                         <a href="/src/student_profile.html"
                             class="mt-2 w-[65px] h-[65px] rounded-full overflow-hidden border-3 border-white/10 hover:border-[#2196f3] transition-colors duration-300 cursor-pointer">
                             <img class="object-cover w-[100%] h-[100%]"
@@ -222,9 +223,9 @@
             </div>
         </div>
 
-        <div class="flex-1 flex flex-col">
+        <div class="flex-1 flex flex-col mt-[50px]">
 
-            <div class="w-full min-h-[92vh] flex justify-center items-start">
+            <div class="w-full h-full flex justify-center items-start">
                 <div
                     class="lg:max-w-[1040px] md:w-full w-full grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-5 md:gap-5 p-4">
 
@@ -396,7 +397,7 @@
 
             <!-- Footer -->
 
-            <footer class="h-[47px] bg-white shrink-0 w-full flex items-center px-6 text-white text-xs">
+            <footer class="h-[47px] bg-white shrink-0 w-full hidden sm:flex items-center px-6 text-white text-xs">
                 <span class="text-[#0d2040] font-inter lg:text-[13px] md:text-[13px] text-[8px]">Copyright © 2024 -
                     2026. All rights reserved.</span>
                 <a class="text-[#0d2040] font-inter pl-2 hover:underline lg:text-[13px] md:text[13px] text-[8px]"

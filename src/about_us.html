@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="icon" href="https://portal.ute.ac/assets/ums_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="icon" type="image/png" href="https://portal.ute.ac.at/assets/ums_icon.png">
 </head>
 
-<body class="bg-[#f8fafc]">
+<body class="bg-[#f8fafc] relative">
     <header class="z-50 flex items-center justify-between h-[60px] md:h-[50px] w-full bg-white shadow-[0_1px_2px_rgba(0,0,0,0.10)] sticky top-0">
         <div class="flex items-center w-auto">
             <div class="pl-[70px] pr-[87px]">
@@ -56,15 +57,15 @@
             </a>
         </div>
     </header>
-    <main class="flex w-full min-h-[92vh]">
+    <main class="flex w-full min-h-screen absolute top-0">
 
         <!-- Sidebar -->
 
         <div id="sidebar" class="@container shrink-0 w-[270px] transition-all duration-300 ease-in-out fixed md:relative top-0 left-0 h-screen md:h-auto -translate-x-full md:translate-x-0 md:z-auto z-50">
-            <div class="bg-[#0b1b37] h-full">
-                <div class="flex flex-col items-center h-[160px] bg-[#09162c] gap-2">
+            <div class="bg-[#0b1b37] h-full overflow-auto">
+                <div class="flex flex-col items-center h-[210px] bg-[#09162c] gap-2">
                     <div
-                        class="@max-[200px]:scale-0 @max-[200px]:opacity-0 flex flex-col justify-center items-center gap-2 transition-all duration-200 transform origin-center">
+                        class="@max-[200px]:scale-0 @max-[200px]:opacity-0 flex flex-col justify-center items-center gap-2 transition-all duration-200 transform origin-center lg:mt-[50px] md:mt-[50px] mt-[60px]">
                         <a href="/src/student_profile.html" class="mt-2 w-[65px] h-[65px] rounded-full overflow-hidden border-3 border-white/10 hover:border-[#2196f3] transition-colors duration-300 cursor-pointer">
                             <img class="object-cover w-[100%] h-[100%]"
                                 src="https://epayment.ute.ac/storage/thumbnails/default/3i/qi/g9rnks2s0k8s4kowksg84.png?p=%5Cstorage%2Fstudents%2Fimages%2F2025%2F12%2F17%2F1765944170-bcda6029124d7951d022bab0445998fb.png&s=p&smartcrop=240x240"
@@ -160,15 +161,15 @@
             </div>
         </div>
 
-        <div class="flex-1 flex flex-col">
+        <div class="flex-1 flex flex-col lg:mt-[50px] md:mt-[50px] mt-[60px]">
 
-            <div class="w-full min-h-[92vh]">
+            <div class="w-full h-full">
 
             </div>
             
             <!-- Footer -->
 
-            <footer class="h-[47px] bg-white shrink-0 w-full flex items-center px-6 text-white text-xs">
+            <footer class="h-[47px] bg-white shrink-0 w-full hidden sm:flex items-center px-6 text-white text-xs">
                 <span class="text-[#0d2040] font-inter lg:text-[13px] md:text-[13px] text-[8px]">Copyright © 2024 - 2026. All rights reserved.</span>
                 <a class="text-[#0d2040] font-inter pl-2 hover:underline lg:text-[13px] md:text[13px] text-[8px]" href="">University of Technology and Entrepreneurship</a>
             </footer>
