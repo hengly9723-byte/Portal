@@ -1,6 +1,9 @@
 const toggleBtnDesktop = document.getElementById('toggleSidebarDesktop');
 const toggleBtnMobile = document.getElementById('toggleSidebarMobile');
 const sidebar = document.getElementById('sidebar');
+const dateInput = document.getElementById('today-date');
+const today = new Date().toISOString().split('T')[0];
+const timeInput = document.getElementById('time');
 
 function isMobileLayout() {
     return window.innerWidth < 768;
@@ -60,3 +63,6 @@ if (sidebar) {
         });
     });
 }
+
+dateInput.value = today;
+timeInput.value = new Date().toLocaleTimeString('en-US', { hour12: false }).slice(0, 5);
